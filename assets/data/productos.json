@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "nombre": "Spider-Man 2",
+    "nombre": "Spider-Man 2", 
     "precio": 59990,
     "categoria": "Accion",
     "plataforma": "PS5",
