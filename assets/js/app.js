@@ -1,7 +1,7 @@
 /**
  * PixelZone — lógica principal
  * Carga productos con Fetch, filtra por búsqueda/categoría
- * y mantiene un resumen dinámico del carrito.
+ * y mantiene un resumen dinámico del carrito. 
  */
 
 const RUTA_PRODUCTOS = "assets/data/productos.json";
