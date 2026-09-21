@@ -5,6 +5,7 @@
  */
 
 const RUTA_PRODUCTOS = "assets/data/productos.json";
+const IMG_FALLBACK = "https://raw.githubusercontent.com/edd-stegmaier/front1_videojuegos_s1/main/img/";
 
 let catalogo = [];
 let productosVisibles = [];
@@ -94,7 +95,8 @@ function renderizarProductos(lista) {
     columna.className = "col-12 col-sm-6 col-xl-4";
     columna.innerHTML = `
       <article class="card product-card h-100 shadow-sm">
-        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}"
+             onerror="this.onerror=null;this.src='${IMG_FALLBACK}'+this.src.split('/').pop();">
         <div class="card-body d-flex flex-column">
           <span class="badge text-bg-dark align-self-start mb-2">${producto.categoria} · ${producto.plataforma}</span>
           <h3 class="h5 card-title text-dark">${producto.nombre}</h3>

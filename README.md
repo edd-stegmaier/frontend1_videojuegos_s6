@@ -13,9 +13,7 @@ python3 -m http.server 8080
 
 Luego abrir [http://localhost:8080](http://localhost:8080).
 
-Las portadas están en `assets/img/`. Si clonas solo el código y faltan imágenes, cópialas desde el repo original:
-
-`front1_videojuegos_s1/img/` → `assets/img/`
+Las portadas viven en `assets/img/`. Si al clonar no aparecen, cópialas desde [front1_videojuegos_s1/img](https://github.com/edd-stegmaier/front1_videojuegos_s1/tree/main/img). La página también usa esas imágenes como respaldo.
 
 ## Estructura
 

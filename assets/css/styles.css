@@ -36,7 +36,8 @@ img {
   min-height: 260px;
   border-radius: 1rem;
   overflow: hidden;
-  background: url("../img/gta_6.webp") center/cover no-repeat;
+  background: url("../img/gta_6.webp") center/cover no-repeat,
+              url("https://raw.githubusercontent.com/edd-stegmaier/front1_videojuegos_s1/main/img/gta_6.webp") center/cover no-repeat;
 }
 
 .hero-banner::before {
