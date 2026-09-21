@@ -6,7 +6,7 @@ Nueva versión de la tienda de videojuegos [front1_videojuegos_s1](https://githu
 
 ```bash
 # Opción rápida con Python
-python3 -m http.server 8080
+python -m http.server 8080
 ```
 
 Luego abrir [http://localhost:8080](http://localhost:8080).
