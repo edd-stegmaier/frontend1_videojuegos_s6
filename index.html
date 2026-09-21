@@ -55,12 +55,77 @@
   </nav>
 
   <main id="contenido" class="container py-4">
-    <section id="inicio" class="hero-banner p-4 p-md-5 mb-4 text-white" aria-label="Lanzamiento destacado">
-      <div class="hero-copy">
-        <span class="badge text-bg-light text-dark mb-2">Lanzamiento destacado</span>
-        <h1 class="display-5 fw-bold">Grand Theft Auto VI</h1>
-        <p class="lead mb-3">Acción, historia y mundo abierto en la próxima entrega de la saga.</p>
-        <a class="btn btn-info text-dark fw-semibold" href="#catalogo">Ver catálogo</a>
+    <section id="inicio" class="mb-4" aria-label="Promociones destacadas">
+      <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Lanzamiento destacado"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Ofertas de consola"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Semana RPG"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Noche PixelZone"></button>
+        </div>
+
+        <div class="carousel-inner rounded-4">
+          <div class="carousel-item active">
+            <img class="d-block w-100 hero-slide-img"
+                 src="assets/img/banner-gta.webp"
+                 alt="Grand Theft Auto VI"
+                 onerror="this.onerror=null;this.src='assets/img/gta_6.webp';">
+            <div class="carousel-caption hero-copy text-start">
+              <span class="badge text-bg-light text-dark mb-2">Lanzamiento destacado</span>
+              <h1 class="display-5 fw-bold">Grand Theft Auto VI</h1>
+              <p class="lead mb-3">Acción, historia y mundo abierto en la próxima entrega de la saga.</p>
+              <a class="btn btn-info text-dark fw-semibold" href="#catalogo">Ver catálogo</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100 hero-slide-img"
+                 src="assets/img/banner-ofertas.jpg"
+                 alt="Ofertas en consolas"
+                 onerror="this.onerror=null;this.src='assets/img/spiderman-2-ps5.png';">
+            <div class="carousel-caption hero-copy text-start">
+              <span class="badge text-bg-warning text-dark mb-2">Ofertas de consola</span>
+              <h2 class="display-5 fw-bold">Hasta 40% OFF</h2>
+              <p class="lead mb-3">Descuentos en títulos de PS5 y Xbox Series por tiempo limitado.</p>
+              <a class="btn btn-info text-dark fw-semibold" href="#catalogo" data-categoria="Accion">Ver acción</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100 hero-slide-img"
+                 src="assets/img/banner-rpg.jpg"
+                 alt="Semana RPG"
+                 onerror="this.onerror=null;this.src='assets/img/cyberpunk-2077-pc.jpg';">
+            <div class="carousel-caption hero-copy text-start">
+              <span class="badge text-bg-info text-dark mb-2">Semana RPG</span>
+              <h2 class="display-5 fw-bold">Mundos para perderse</h2>
+              <p class="lead mb-3">Cyberpunk 2077 y otros RPGs con historia, builds y exploración.</p>
+              <a class="btn btn-info text-dark fw-semibold" href="#catalogo" data-categoria="RPG">Ver RPG</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100 hero-slide-img"
+                 src="assets/img/banner-noche.webp"
+                 alt="Noche PixelZone"
+                 onerror="this.onerror=null;this.src='assets/img/just-dance-2026-edition-nintendo-switch-2-0.webp';">
+            <div class="carousel-caption hero-copy text-start">
+              <span class="badge text-bg-light text-dark mb-2">Noche PixelZone</span>
+              <h2 class="display-5 fw-bold">Multijugador en casa</h2>
+              <p class="lead mb-3">Arma la jornada con Just Dance y juegos para compartir pantalla.</p>
+              <a class="btn btn-info text-dark fw-semibold" href="#catalogo">Armar carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
     </section>
 

@@ -15,6 +15,15 @@ Luego abrir [http://localhost:8080](http://localhost:8080).
 
 Las portadas viven en `assets/img/`. Si al clonar no aparecen, cópialas desde [front1_videojuegos_s1/img](https://github.com/edd-stegmaier/front1_videojuegos_s1/tree/main/img). La página también usa esas imágenes como respaldo.
 
+El banner superior es un carrusel de Bootstrap (`#heroCarousel`) que rota cada 3 segundos. Para cambiar las fotos, reemplaza estos archivos:
+
+- `assets/img/banner-gta.webp`
+- `assets/img/banner-ofertas.jpg`
+- `assets/img/banner-rpg.jpg`
+- `assets/img/banner-noche.webp`
+
+Mientras no existan, se muestran las portadas actuales del catálogo.
+
 ## Estructura
 
 ```

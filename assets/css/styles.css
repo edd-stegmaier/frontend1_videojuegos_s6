@@ -31,26 +31,47 @@ img {
   background-color: var(--pz-panel);
 }
 
-.hero-banner {
+.hero-carousel .carousel-item {
   position: relative;
-  min-height: 260px;
-  border-radius: 1rem;
-  overflow: hidden;
-  background: url("../img/gta_6.webp") center/cover no-repeat,
-              url("https://raw.githubusercontent.com/edd-stegmaier/front1_videojuegos_s1/main/img/gta_6.webp") center/cover no-repeat;
 }
 
-.hero-banner::before {
+.hero-slide-img {
+  height: 320px;
+  object-fit: cover;
+  filter: brightness(0.72);
+}
+
+.hero-carousel .carousel-item::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(2, 6, 23, 0.88) 0%, rgba(15, 23, 42, 0.35) 100%);
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(2, 6, 23, 0.88) 0%, rgba(15, 23, 42, 0.28) 55%, rgba(15, 23, 42, 0.12) 100%);
 }
 
 .hero-copy {
-  position: relative;
-  z-index: 1;
+  left: 1.5rem;
+  right: auto;
+  bottom: 1.5rem;
   max-width: 32rem;
+  text-align: left;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero-slide-img {
+    height: 240px;
+  }
+
+  .hero-copy {
+    left: 1rem;
+    right: 1rem;
+    bottom: 2.25rem;
+  }
+
+  .hero-copy .lead {
+    display: none;
+  }
 }
 
 .product-card img {
