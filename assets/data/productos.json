@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Spider-Man 2",
+    "precio": 59990,
+    "categoria": "Accion",
+    "plataforma": "PS5",
+    "imagen": "assets/img/spiderman-2-ps5.png",
+    "rating": 4.9
+  },
+  {
+    "id": 2,
+    "nombre": "Gears of War 4",
+    "precio": 49990,
+    "categoria": "Accion",
+    "plataforma": "Xbox One",
+    "imagen": "assets/img/gears-of-war-4-xbox-one.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "nombre": "Cyberpunk 2077",
+    "precio": 54990,
+    "categoria": "RPG",
+    "plataforma": "PC",
+    "imagen": "assets/img/cyberpunk-2077-pc.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": 4,
+    "nombre": "Just Dance 2026",
+    "precio": 39990,
+    "categoria": "Accion",
+    "plataforma": "Nintendo Switch",
+    "imagen": "assets/img/just-dance-2026-edition-nintendo-switch-2-0.webp",
+    "rating": 4.6
+  }
+]

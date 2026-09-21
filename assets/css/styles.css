@@ -1,0 +1,76 @@
+/* Estilos complementarios a Bootstrap 5 para mantener la identidad de PixelZone */
+
+:root {
+  --pz-bg: #0d1220;
+  --pz-panel: #111928;
+  --pz-card: #f5f7ff;
+  --pz-primary: #5eead4;
+  --pz-accent: #fbbf24;
+  --pz-text: #edf3ff;
+  --pz-muted: #b9c5df;
+}
+
+body {
+  background: linear-gradient(135deg, #0b1020 0%, #151d35 100%);
+  color: var(--pz-text);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar-brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.navbar {
+  background-color: var(--pz-panel);
+}
+
+.hero-banner {
+  position: relative;
+  min-height: 260px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: url("../img/gta_6.webp") center/cover no-repeat;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(2, 6, 23, 0.88) 0%, rgba(15, 23, 42, 0.35) 100%);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 32rem;
+}
+
+.product-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.cart-panel,
+.sidebar-panel {
+  background-color: rgba(29, 43, 70, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cart-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cart-item:last-child {
+  border-bottom: 0;
+}
+
+footer a:hover {
+  color: var(--pz-primary) !important;
+}
